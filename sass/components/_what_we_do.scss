@@ -1,0 +1,25 @@
+.photo-block{
+    padding-bottom: 94px;
+    display: flex;
+    justify-content: space-between;
+}
+.photo-block__position{
+    position: relative;
+}
+.label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:370px;
+    height:70px;
+    font-weight: 700;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    position: absolute;
+    bottom:0;
+}
+.label--color{
+    background-color:#2F303ACC;
+    color: #fff; 
+}

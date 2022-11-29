@@ -1,0 +1,51 @@
+.contact__up__please li:not(:last-child){
+    @media screen and (max-width:1200px) {
+        margin-bottom: 10px; 
+     }
+    @media screen and (min-width:1200px) {
+        margin-right: 50px;
+    }
+}
+.m__t__style__up{
+    color: #757575;
+    font-weight: 500;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{
+        color:#2196f3;
+    }
+}
+.contact__up__please{
+    @media screen and (max-width:1200px) { 
+       padding: 21px 0; 
+    }
+    @media screen and (min-width:1200px) {
+        display: flex;
+        padding: 32px 0;        
+    }
+}
+.icon__m__t{
+    margin-right: 10px;
+}
+.address__style{
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    color: #fff;
+}
+.m__t__style__down{
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{
+        color:#2196f3;
+    }
+}
+.address__position li:not(:last-child){
+    margin-bottom: 9px;
+}

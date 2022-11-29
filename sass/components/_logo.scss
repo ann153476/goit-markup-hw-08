@@ -1,0 +1,31 @@
+.color__web{
+    color:#2196F3;
+}
+.color__studio__up{
+   color: #000000;
+}
+.color__studio__down{
+   color: #FFFFFF;
+}
+.logo{
+   font-family: 'Raleway';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.19;
+   width: 145px;
+   height: 31px;
+   
+}
+.logo__plase__up{
+   @media screen and (min-width:480px) { 
+      margin: 16px 0;
+   }
+    @media screen and (min-width:768px) { 
+        margin: 26px 88px 26px 0;
+     }
+     @media screen and (min-width:1200px) {
+        margin: 26px 93px 26px 0;
+     }
+    
+}

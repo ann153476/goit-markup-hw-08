@@ -1,16 +1,36 @@
 
 .grey__block{
-    background-image: linear-gradient(#2F303A66,#2F303A66),url(../img/Img.png);
+    
     background-color: #2F303A;
     background-position: center ;
     background-size: cover ;
     background-repeat: no-repeat;
-    padding: 200px 0 ;
+    
+
+@media screen and (min-width:480px) {
+    padding: 118px 0 ;
+      background-image: linear-gradient(#2F303A66,#2F303A66),url(../../img/mob/img.png);
     @media (min-device-pixel-ratio: 1), (min-resolution: 196dpi), (min-resolution:2dppx){
-        background-image: url(../../img/Img@2x.png);
-        
+        background-image: url(../../img/mob/img@2x.png);
     }
 }
+@media screen and (min-width:768px) {
+
+    background-image: linear-gradient(#2F303A66,#2F303A66),url(../../img/tablet/img.png);
+    @media (min-device-pixel-ratio: 1), (min-resolution: 196dpi), (min-resolution:2dppx){
+        background-image: url(../../img/tablet/img@2x.png);
+    } 
+}
+@media screen and (min-width:1200px) {
+    padding: 200px 0 ;
+    background-image: linear-gradient(#2F303A66,#2F303A66),url(../img/Img.png);
+    @media (min-device-pixel-ratio: 1), (min-resolution: 196dpi), (min-resolution:2dppx){
+        background-image: url(../../img/Img@2x.png);
+    }
+}
+    
+
+} 
 .max__width{
     max-width: 1600px;
     margin:0 auto;
@@ -19,9 +39,14 @@
     color: #FFFFFF;
     text-align: center;
     line-height: 1.36;
-    font-size: 44px; 
+    font-size: 26px;
     text-transform: uppercase;
-    width: 696px;
+    
     display: block;
     margin: auto;margin-bottom: 30px;
+    width: 360px;
+    @media screen and (min-width:1200px) {
+        width: 696px;font-size: 44px;
+    }
+
 }

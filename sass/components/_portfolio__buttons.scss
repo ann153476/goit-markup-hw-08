@@ -1,8 +1,17 @@
-
+.buttons__portfolio>li{
+  @media screen and (max-width:767px) {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+}
 .buttons__portfolio{
+  margin-bottom: 25px;
+  @media screen and (min-width:768px) {
     display: flex;
     margin-bottom: 50px;
     justify-content: center;
+  }
+    
 }
 .buttons__portfolio button{
     transition-property: background-color, box-shadow, color;

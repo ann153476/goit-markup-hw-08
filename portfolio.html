@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="./css/media-features.css">
 </head>
 <body>
-    <header class="container">
-        
+    <header>
+        <div class="container">
+        <div class="header__container ">
         <a href="#" class="logo logo__plase__up"><span class="color__web">Web</span><span class="color__studio__up">Studio</span></a>
-        <div class="header__container">
+
         <nav>
             <ul class="flex nav__style">
                 <li><a href="index.html" >Студія</a></li>
@@ -25,11 +26,11 @@
             </ul>
         </nav>
         <ul class="contact__up__please">
-            <li><a href="mailto:info@devstudio.com" class="m__t__style__up flex--center">
+            <li><a href="mailto:info@devstudio.com" class="m__t__style__up">
                 <svg class="icon__m__t" width="16" height="12"><use href="./img/icons.svg#icon-envelopemail"></use></svg>info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="m__t__style__up flex--center">
+            <li><a href="tel:+380961111111" class="m__t__style__up">
                 <svg class="icon__m__t" width="10" height="16"><use href="./img/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a> </li>
-        </ul></div>
+        </ul>
         <button
           class="menu-toggle js-open-menu"
           aria-expanded="false"
@@ -48,7 +49,8 @@
               clip-rule="evenodd"
             ></path>
           </svg>
-        </button>
+        </button></div>
+        </div>
     </header>
     <main>
     <section class="section">
@@ -66,7 +68,10 @@
                 <li>
                     <a href="#">
                     <div class="box">
-                        <img src="./img/imgportfolio1.jpg" alt="ноутбук" width="370">
+                        <img 
+                        srcset=".\img\imgportfolio1s.jpg 450w, .\img\imgportfolio1m.jpg 354w, .\img\imgportfolio1l.jpg 270w"
+sizes="(min-width:480px) 450px, (min-width:768px) 354px, (min-width:1200px) 370px, 100vw"
+                        src="./img/imgportfolio1.jpg" alt="ноутбук">
                         <div class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
                     </div>
                     <div class="border__not__top">
@@ -77,7 +82,10 @@
                 <li>
                     <a href="#">
                     <div class="box">
-                        <img src="./img/imgportfolio2.jpg" alt="дві людини грають в баскетбол" width="370">
+                        <img 
+                        srcset=".\img\imgportfolio2s.jpg 450w, .\img\imgportfolio2m.jpg 354w, .\img\imgportfolio2l.jpg 270w"
+sizes="(min-width:480px) 450px, (min-width:768px) 354px, (min-width:1200px) 370px, 100vw"
+                        src="./img/imgportfolio2.jpg" alt="дві людини грають в баскетбол">
                         <div class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
                     </div>
                     <div class="border__not__top">
@@ -88,7 +96,10 @@
                 <li>
                     <a href="#">
                     <div class="box">
-                        <img src="./img/imgportfolio3.jpg" alt="логотип ресторану з акулою" width="370">
+                        <img 
+                        srcset=".\img\imgportfolio3s.jpg 450w, .\img\imgportfolio3m.jpg 354w, .\img\imgportfolio3l.jpg 270w"
+sizes="(min-width:480px) 450px, (min-width:768px) 354px, (min-width:1200px) 370px, 100vw"
+                        src="./img/imgportfolio3l.jpg" alt="дві людини грають в баскетбол">
                         <div class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
                     </div>
                         <div class="border__not__top">
@@ -99,7 +110,10 @@
                 <li>
                     <a href="#">
                     <div class="box"> 
-                        <img src="./img/imgportfolio4.jpg" alt="навушники" width="370">
+                        <img 
+                        srcset=".\img\imgportfolio4s.jpg 450w, .\img\imgportfolio4m.jpg 354w, .\img\imgportfolio4l.jpg 270w"
+sizes="(min-width:480px) 450px, (min-width:768px) 354px, (min-width:1200px) 370px, 100vw"
+                        src="./img/imgportfolio4.jpg" alt="навушники">
                         <div class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
                     </div>
                         <div class="border__not__top">
@@ -110,7 +124,10 @@
                 <li>
                     <a href="#">
                     <div class="box">    
-                        <img src="./img/imgportfolio5.jpg" alt="дві коробки" width="370">
+                        <img 
+                        srcset=".\img\imgportfolio5s.jpg 450w, .\img\imgportfolio5m.jpg 354w, .\img\imgportfolio5l.jpg 270w"
+sizes="(min-width:480px) 450px, (min-width:768px) 354px, (min-width:1200px) 370px, 100vw"
+                        src="./img/imgportfolio5.jpg" alt="дві коробки">
                         <div class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
                     </div>    
                         <div class="border__not__top">
@@ -121,7 +138,10 @@
                 <li>
                     <a href="#">
                     <div class="box">    
-                        <img src="./img/imgportfolio6.jpg" alt="монітор" width="370">
+                        <img 
+                        srcset=".\img\imgportfolio6s.jpg 450w, .\img\imgportfolio6m.jpg 354w, .\img\imgportfolio6l.jpg 270w"
+sizes="(min-width:480px) 450px, (min-width:768px) 354px, (min-width:1200px) 370px, 100vw"
+                        src="./img/imgportfolio6.jpg" alt="монітор">
                         <div class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
                     </div>
                         <div class="border__not__top">
@@ -132,7 +152,10 @@
                 <li>
                     <a href="#">
                     <div class="box">
-                        <img src="./img/imgportfolio7.jpg" alt="книга" width="370">
+                        <img 
+                        srcset=".\img\imgportfolio7s.jpg 450w, .\img\imgportfolio7m.jpg 354w, .\img\imgportfolio7l.jpg 270w"
+sizes="(min-width:480px) 450px, (min-width:768px) 354px, (min-width:1200px) 370px, 100vw"
+                        src="./img/imgportfolio7.jpg" alt="книга">
                         <div class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
                     </div>
                         <div class="border__not__top">
@@ -143,7 +166,10 @@
                 <li>
                     <a href="#">
                     <div class="box">
-                        <img src="./img/imgportfolio8.jpg" alt="бірка" width="370">
+                        <img 
+                        srcset=".\img\imgportfolio8s.jpg 450w, .\img\imgportfolio8m.jpg 354w, .\img\imgportfolio8l.jpg 270w"
+sizes="(min-width:480px) 450px, (min-width:768px) 354px, (min-width:1200px) 370px, 100vw"
+                        src="./img/imgportfolio8.jpg" alt="бірка">
                         <div class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
                     </div>
                         <div class="border__not__top">
@@ -154,7 +180,10 @@
                 <li>
                     <a href="#">
                     <div class="box">
-                        <img src="./img/imgportfolio9.jpg" alt="руки друкують на ноутбуці" width="370">
+                        <img 
+                        srcset=".\img\imgportfolio9s.jpg 450w, .\img\imgportfolio9m.jpg 354w, .\img\imgportfolio9l.jpg 270w"
+sizes="(min-width:480px) 450px, (min-width:768px) 354px, (min-width:1200px) 370px, 100vw"
+                        src="./img/imgportfolio9.jpg" alt="руки друкують на ноутбуці">
                         <div class="overlay">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</div>
                     </div>
                         <div class="border__not__top">
@@ -222,14 +251,15 @@
               </svg>
             </button>
       
-            <ul class="mobile__menu">
-              <li><a href="" class="link">Студія</a></li>
-              <li><a href="" class="link">Портфоліо</a></li>
-              <li><a href="" class="link">Контакти</a></li>
+            <ul class="mobile-menu">
+              <li><a href="index.html" class="link">Студія</a></li>
+              <li><a href="portfolio.html" class="link active" >Портфоліо</a></li>
+              <li><a href="#" class="link">Контакти</a></li>
             </ul>
-            <ul class="mobile__contacts">
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111">+38 096 111 11 11</a> </li>
+            <ul class="mobile-contacts">
+                <li><a href="tel:+380961111111" class="mob__t">+38 096 111 11 11</a> </li>
+                <li><a href="mailto:info@devstudio.com" class="mob__m">info@devstudio.com</a></li>
+                
             </ul>
           </div>
 <script src="./js/mobile-menu.js"></script>

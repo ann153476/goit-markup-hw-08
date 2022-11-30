@@ -1,10 +1,12 @@
 header{
     border-bottom: 1px solid #ECECEC;
-    display: flex;
 }
 .header__container{
-    display: flex;
-    @media screen and (max-width:768px) {
+        display: flex;
+}
+.nav__style,
+.contact__up__please{
+    @media screen and (max-width:767.5px) {
         display: none;
     }
 }

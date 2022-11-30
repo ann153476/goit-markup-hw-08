@@ -13,24 +13,24 @@
     <link rel="stylesheet" href="./css/media-features.css">
 </head>
 <body>
-    <header class="container">
-        
+    <header>
+    <div class="container">
+    <div class="header__container">  
         <a href="#" class="logo logo__plase__up"><span class="color__web">Web</span><span class="color__studio__up">Studio</span></a>
-           <div class="header__container"> 
+            
         <nav>
         <ul class="flex nav__style">
             <li><a href="index.html" class="active">Студія</a></li>
             <li><a href="portfolio.html">Портфоліо</a></li>
             <li><a href="#">Контакти</a></li>
         </ul>
-    </nav>
+        </nav>
     <ul class="contact__up__please">
-        <li><a href="mailto:info@devstudio.com" class="m__t__style__up flex--center">
+        <li><a href="mailto:info@devstudio.com" class="m__t__style__up">
             <svg class="icon__m__t" width="16" height="12"><use href="./img/icons.svg#icon-envelopemail"></use></svg>info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="m__t__style__up flex--center">
+        <li><a href="tel:+380961111111" class="m__t__style__up">
             <svg class="icon__m__t" width="10" height="16"><use href="./img/icons.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a> </li>
     </ul>
-        </div>
         <button
           class="menu-toggle js-open-menu"
           aria-expanded="false"
@@ -49,7 +49,8 @@
               clip-rule="evenodd"
             ></path>
           </svg>
-        </button>
+        </button></div>
+    </div>    
     </header> 
 <main>
     
@@ -140,7 +141,7 @@
        </ul>
 </div>
 </section> 
-<section>
+<section class="what__we__do">
     <div class="container">
         <h2 class="title__text">Чим ми займаємося</h2>
        <ul class="photo-block">
@@ -154,7 +155,10 @@
     <h2 class="title__text">Наша команда</h2>
 <ul class="team">
    <li class="team__style">
-       <img src="./img/photo1.jpg" alt="чоловік" width="270">
+       <img
+       srcset=".\img\photo1s.jpg 450w, .\img\photo1m.jpg 354w, .\img\photo1l.jpg 270w"
+       sizes="(min-width:480px) 450px, (min-width:768px) 354px, (min-width:1200px) 270px, 100vw"
+       src="./img/photo1l.jpg" alt="чоловік">
        <div class="team__card">
        <h3 class="team__name">Ігор Дем'яненко</h3>
        <p class="team__work">Product Designer</p>
@@ -169,7 +173,10 @@
             <use href="./img/icons.svg#icon-linkedin"></use></svg></a></li></ul></div>
     </li>
    <li class="team__style">
-       <img src="./img/photo2.jpg" alt="жінка" width="270">
+       <img 
+       srcset=".\img\photo2s.jpg 450w, .\img\photo2m.jpg 354w, .\img\photo2l.jpg 270w"
+       sizes="(min-width:480px) 450px, (min-width:768px) 354px, (min-width:1200px) 270px, 100vw"
+       src="./img/photo2l.jpg" alt="жінка">
        <div class="team__card ">
        <h3 class="team__name">Ольга Рєпіна</h3>
        <p class="team__work">Frontend Developer</p>
@@ -184,7 +191,10 @@
             <use href="./img/icons.svg#icon-linkedin"></use></svg></a></li></ul></div>
     </li>
    <li class="team__style">
-       <img src="./img/photo3.jpg" alt="чоловік посміхаеться" width="270">
+       <img 
+       srcset=".\img\photo3s.jpg 450w, .\img\photo3m.jpg 354w, .\img\photo3l.jpg 270w"
+       sizes="(min-width:480px) 450px, (min-width:768px) 354px, (min-width:1200px) 270px, 100vw"
+       src="./img/photo3l.jpg" alt="чоловік посміхаеться">
        <div class="team__card ">
        <h3 class="team__name">Микола Тарасов</h3>
        <p class="team__work">Marketing</p>
@@ -199,8 +209,11 @@
             <use href="./img/icons.svg#icon-linkedin"></use></svg></a></li></ul></div>
     </li>
    <li class="team__style">
-       <img src="./img/photo4.jpg" alt="чоловік в окулярах" width="270">
-       <div class="team__card ">
+       <img 
+       srcset=".\img\photo4s.jpg 450w, .\img\photo4m.jpg 354w, .\img\photo4l.jpg 270w"
+       sizes="(min-width:480px) 450px, (min-width:768px) 354px, (min-width:1200px) 270px, 100vw"
+       src="./img/photo4l.jpg" alt="чоловік в окулярах">
+       <div class="team__card">
        <h3 class="team__name">Михайло Єрмаков</h3>
        <p class="team__work">UI Designer</p>
        <ul class="ico__messenger ">
@@ -266,20 +279,22 @@
 </section>
 
 </main>
-    <footer class="grey__blok__down">
-    <div class="container  footer__style flex">
-        <div>
-        <div><a href="#" class="logo__plase__down logo"><span class="color__web">Web</span><span class="color__studio__down">Studio</span></a></div>
+<footer class="grey__blok__down">
+    <div class="container  footer__all">
+    <div class="footer__switch">
+        <div class="footer__1block">
+        <div class="logo__plase__down"><a href="#" class="logo"><span class="color__web">Web</span><span class="color__studio__down">Studio</span></a></div>
         <address>
             <ul class="address__position">
             <li><a class="address__style" href="#">м. Київ, пр-т Лесі Українки, 26</p></li>
             <li><a class="m__t__style__down" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li><a class="m__t__style__down" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
-        </address></div>
-        <div class="ico__block__place">
-        <p class="join">приєднуйтесь</p>
-        <ul class="ico__messenger flex--between">
+        </address>
+        </div>
+        <div class="footer__2block">
+        <p class="footer__title">приєднуйтесь</p>
+        <ul class="ico__messenger">
             <li><a class="ico__messenger__link ico__messenger--footer flex--center" href="#"><svg width="20" height="20">
                 <use href="./img/icons.svg#icon-instagram"></use></svg></a></li>
             <li><a class="ico__messenger__link ico__messenger--footer flex--center" href="#"><svg width="20" height="20">
@@ -288,10 +303,12 @@
                 <use href="./img/icons.svg#icon-facebook"></use></svg></a></li>
             <li><a class="ico__messenger__link ico__messenger--footer flex--center" href="#"><svg width="20" height="20">
                 <use href="./img/icons.svg#icon-linkedin"></use></svg></a></li>
-        </ul></div> 
-        <div class="footer__mail">
-            <h2>Підпишіться на розсилку</h2>
-            <div class="flex">
+        </ul>
+        </div>
+    </div>
+        <div>
+            <h2 class="footer__title">Підпишіться на розсилку</h2>
+            <div class="footer__mail">
             <label for="mail"><p></p></label>
             <input type="text" name="mail" id="mail"/>
             <button class="main__button flex--center" type="button">Підписатися
@@ -319,10 +336,23 @@
         </button>
   
         <ul class="mobile-menu">
-            <li><a href="" class="link">Студія</a></li>
-            <li><a href="" class="link">Портфоліо</a></li>
-            <li><a href="" class="link">Контакти</a></li>
-          </ul>
+            <li><a href="index.html" class="link active">Студія</a></li>
+            <li><a href="portfolio.html" class="link">Портфоліо</a></li>
+            <li><a href="#" class="link">Контакти</a></li>
+        </ul>
+        <ul class="mobile-contacts">
+            <li class="mob__t"><a  href="tel:+380961111111" >+38 096 111 11 11</a> </li>
+            <li class="mob__m"><a  href="mailto:info@devstudio.com" >info@devstudio.com</a></li>
+        </ul>
+        <ul class="messendger">
+            <li><a href="#">Instagram</a></li>
+            <li class="i">|</li>
+            <li><a href="#">Twitter</a></li>
+            <li class="i">|</li>
+            <li><a href="#">Facebook</a></li>
+            <li class="i">|</li>
+            <li><a href="#">LinkedIn</a></li>
+        </ul>
       </div> 
 <script src="./js/modal.js"></script>
 <script src="./js/mobile-menu.js"></script>

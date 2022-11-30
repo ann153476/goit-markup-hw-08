@@ -18,14 +18,14 @@
    
 }
 .logo__plase__up{
-   @media screen and (min-width:480px) { 
-      margin: 16px 0;
+   @media screen and (max-width:767.5px) { 
+      margin: 16px 15px;
    }
-    @media screen and (min-width:768px) { 
+   @media screen and (min-width:767.5px) { 
         margin: 26px 88px 26px 0;
-     }
-     @media screen and (min-width:1200px) {
+   }
+   @media screen and (min-width:1200px) {
         margin: 26px 93px 26px 0;
-     }
+   }
     
 }

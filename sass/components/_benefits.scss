@@ -7,12 +7,11 @@
         align-items: center;
     }
     @media screen and (min-width:768px){
-        display: flex;
         flex-wrap:wrap;
         margin: -15px;
         justify-content: space-between;
         flex-direction: row;
-        }
+    }
     
 }
 .benefits__card{
@@ -21,7 +20,9 @@
         margin-bottom: 30px;
     }
     }
-    @media screen and (min-width:768px) {
+}
+.benefits__card{
+    @media screen and (min-width:768px) and (max-width:1199.5px) {
         flex-basis:calc(100% - 2*15px)/2;
         margin: 15px;width: 354px;
     }
@@ -41,6 +42,7 @@
     background-color:#F5F4FA;
 }
 .benefits__title{
+    font-size: 14px;
     margin-bottom: 10px;
     line-height: 1.14;
     font-weight: 700;

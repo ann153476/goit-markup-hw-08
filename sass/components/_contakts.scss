@@ -16,6 +16,9 @@
     &:focus{
         color:#2196f3;
     }
+    @media screen and (min-width:767.5px) and (max-width:1199.5px) {
+        font-size: 12px;
+    }
 }
 .contact__up__please{
     margin-left: auto;

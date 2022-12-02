@@ -2,7 +2,7 @@
     font-size: 14px;
     letter-spacing: 0.03em;
     display: flex;
-    @media screen and (min-width:480px) {
+    @media screen and (max-width:767.5px) {
         flex-direction: column;
         align-items: center;
     }
@@ -16,7 +16,7 @@
 }
 .benefits__card{
     &:not(:last-child){
-    @media screen and (min-width:480px) {
+    @media screen and (max-width:767.5px) {
         margin-bottom: 30px;
     }
     }
@@ -46,7 +46,7 @@
     margin-bottom: 10px;
     line-height: 1.14;
     font-weight: 700;
-    @media screen and (min-width:480px) {
+    @media screen and (max-width:767.5px) {
         text-align: center;
     }
     @media screen and (min-width:768px) {

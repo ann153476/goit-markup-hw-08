@@ -227,7 +227,7 @@ header {
   }
 }
 
-.active:visited {
+.active {
   color: #2196F3;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -268,7 +268,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-self: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .m__t__style__up:hover, .m__t__style__up:focus {
   color: #2196f3;
@@ -330,17 +332,18 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  padding: 118px 0;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767.5px) {
   .grey__block {
-    padding: 118px 0;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/mob/img.png);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mob/img.png);
   }
 }
-@media screen and (min-width: 480px) and (min-device-pixel-ratio: 1), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2.0416666666666665), screen and (min-width: 480px) and (min-resolution: 196dpi), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 767.5px) and (min-device-pixel-ratio: 1), screen and (max-width: 767.5px) and (-webkit-min-device-pixel-ratio: 2.0416666666666665), screen and (max-width: 767.5px) and (min-resolution: 196dpi), screen and (max-width: 767.5px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767.5px) and (min-resolution: 2dppx) {
   .grey__block {
-    background-image: url(../img/mob/img@2x.png);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/mob/img@2x.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/mob/img@2x.png);
   }
 }
 @media screen and (min-width: 768px) {
@@ -351,7 +354,8 @@ header {
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 1), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2.0416666666666665), screen and (min-width: 768px) and (min-resolution: 196dpi), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .grey__block {
-    background-image: url(../img/tablet/img@2x.png);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/tablet/img@2x.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet/img@2x.png);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -363,7 +367,8 @@ header {
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 1), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2.0416666666666665), screen and (min-width: 1200px) and (min-resolution: 196dpi), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .grey__block {
-    background-image: url(../img/Img@2x.png);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/Img@2x.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Img@2x.png);
   }
 }
 
@@ -401,6 +406,10 @@ header {
   opacity: 1;
   -webkit-transition: 1s linear;
   transition: 1s linear;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .backdrop.is-hidden {
@@ -411,22 +420,22 @@ header {
 
 .modal {
   position: absolute;
-  width: 528px;
-  height: 581px;
-  font-size: 12px;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 450px;
+  height: 609px;
+  font-size: 12px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-@media screen and (max-width: 1199.5px) {
+@media screen and (min-width: 1199.5px) {
   .modal {
-    width: 450px;
-    height: 609px;
+    width: 528px;
+    height: 581px;
     font-size: 14px;
   }
 }
@@ -572,21 +581,39 @@ header {
   margin-bottom: 30px;
   color: #757575;
 }
+@media screen and (max-width: 1199.5px) {
+  .agree {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+@media screen and (min-width: 1199.5px) {
+  .agree {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
 
 .agree p {
   margin-left: 9px;
 }
 
-.agree a {
+.agree__a {
+  font-size: 12px;
+  line-height: 1.16;
   color: #2196F3;
   text-decoration: underline;
+}
+@media screen and (min-width: 1199.5px) {
+  .agree__a {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .agree a,
 .agree p {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
   letter-spacing: 0.03em;
 }
 
@@ -636,7 +663,7 @@ header {
   display: -ms-flexbox;
   display: flex;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767.5px) {
   .benefits {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -662,7 +689,7 @@ header {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767.5px) {
   .benefits__card:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -707,7 +734,7 @@ header {
   line-height: 1.14;
   font-weight: 700;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767.5px) {
   .benefits__title {
     text-align: center;
   }
@@ -781,7 +808,7 @@ header {
   letter-spacing: 0.03em;
   text-align: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.5px) {
   .team {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -842,7 +869,7 @@ header {
   background-color: #FFFFFF;
   margin: auto;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767.5px) {
   .team__card {
     padding: 30px 122px 24px;
   }
@@ -916,7 +943,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 1199.5px) {
   .clients {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -948,7 +975,7 @@ header {
   color: #2196F3;
   border: 1px solid #2196F3;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767.5px) {
   .clients__link {
     width: 210px;
     -ms-flex-preferred-size: calc(100% - 0px)/2;
@@ -1094,7 +1121,7 @@ header {
   min-width: 231px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767.5px) {
   .portfolio__net li {
     width: 450px;
     margin-bottom: 30px;

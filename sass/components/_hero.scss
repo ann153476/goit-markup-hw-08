@@ -5,7 +5,12 @@
     background-position: center ;
     background-size: cover ;
     background-repeat: no-repeat;
+    @media screen and (max-width:480px) {
+        padding: 78px 0;
+    }
+@media screen and (min-width:480px) {
     padding: 118px 0 ;
+}
 @media screen and (max-width:767.5px) {
     
       background-image: linear-gradient(#2F303A66,#2F303A66),url(../img/mob/img.png);

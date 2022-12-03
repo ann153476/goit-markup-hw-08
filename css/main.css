@@ -332,7 +332,16 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 118px 0;
+}
+@media screen and (max-width: 480px) {
+  .grey__block {
+    padding: 78px 0;
+  }
+}
+@media screen and (min-width: 480px) {
+  .grey__block {
+    padding: 118px 0;
+  }
 }
 @media screen and (max-width: 767.5px) {
   .grey__block {
@@ -396,7 +405,7 @@ header {
 }
 
 .backdrop {
-  position: relative;
+  position: fixed;
   z-index: 2;
   top: 0;
   left: 0;
@@ -406,10 +415,6 @@ header {
   opacity: 1;
   -webkit-transition: 1s linear;
   transition: 1s linear;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 .backdrop.is-hidden {
@@ -1045,11 +1050,12 @@ header {
   background-color: transparent;
   outline: transparent;
   margin-right: 12px;
+  width: 100%;
 }
 .footer__mail input:hover, .footer__mail input:focus {
   border-color: #2196F3;
 }
-@media screen and (max-width: 1199.5px) {
+@media screen and (min-width: 480px) and (max-width: 1199.5px) {
   .footer__mail input {
     width: 450px;
     margin-bottom: 20px;
@@ -1324,7 +1330,7 @@ header {
 }
 
 .menu-container {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100vw;
@@ -1338,6 +1344,12 @@ header {
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+}
+@media screen and (max-width: 480px) {
+  .menu-container {
+    -webkit-transform: translateX(150%);
+            transform: translateX(150%);
+  }
 }
 
 .menu-container.is-open {

@@ -1,12 +1,10 @@
 .backdrop{
-    position: relative;
+    position: fixed;
     z-index: 2;
     top: 0;left: 0;right: 0;bottom: 0;
     background-color: #00000033;
     opacity: 1;
     transition: 1s linear;
-    top: 50%;left: 50%;
-    transform: translate(-50%,-50%);
 }
 .backdrop.is-hidden{
     opacity: 0;

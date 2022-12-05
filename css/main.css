@@ -76,7 +76,7 @@ p {
     width: 480px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
@@ -434,6 +434,12 @@ header {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 300px;
+    height: 406px;
+  }
+}
 @media screen and (min-width: 1199.5px) {
   .modal {
     width: 528px;
@@ -493,6 +499,11 @@ header {
   width: 100%;
   height: 40px;
   margin-bottom: 10px;
+}
+@media screen and (max-width: 480px) {
+  .call__back input {
+    height: 15px;
+  }
 }
 .call__back input:hover, .call__back input:focus {
   border-color: #2196F3;
@@ -937,18 +948,12 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 @media screen and (max-width: 1199.5px) {
   .clients {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin: -15px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
   }
 }
 
@@ -1118,6 +1123,13 @@ header {
 
 .footer__1block {
   min-width: 231px;
+}
+
+@media screen and (max-width: 480px) {
+  .footer__input {
+    margin-bottom: 15px;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 767.5px) {

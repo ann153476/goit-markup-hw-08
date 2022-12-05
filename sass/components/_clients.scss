@@ -1,11 +1,10 @@
 .clients{
     display: flex;
     justify-content: center;
-    align-items: center;
+    
     @media screen and (max-width:1199.5px) {
         flex-wrap:wrap;
         margin: -15px;
-        justify-content: space-between;
     }
 }
 .clients__link{

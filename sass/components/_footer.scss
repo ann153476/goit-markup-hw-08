@@ -94,6 +94,10 @@
 .footer__1block{
     min-width: 231px;
 }
-
+.footer__input{
+    @media screen and (max-width:480px) {
+    margin-bottom: 15px; width: 100%;}
+    
+}
 
 

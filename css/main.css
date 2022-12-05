@@ -69,8 +69,9 @@ p {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
@@ -392,16 +393,12 @@ header {
   line-height: 1.36;
   font-size: 26px;
   text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.06em;
   display: block;
   margin: auto;
   margin-bottom: 30px;
-  width: 360px;
-}
-@media screen and (min-width: 1200px) {
-  .big__text {
-    width: 696px;
-    font-size: 44px;
-  }
+  max-width: 1199px;
 }
 
 .backdrop {
@@ -849,9 +846,6 @@ header {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 767.5px) {
-  .team__style {
-    width: 450px;
-  }
   .team__style:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -876,7 +870,7 @@ header {
 }
 @media screen and (max-width: 767.5px) {
   .team__card {
-    padding: 30px 122px 24px;
+    padding: 30px 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -900,7 +894,6 @@ header {
 }
 
 .ico__messenger {
-  width: 206px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -941,9 +934,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1330,11 +1323,11 @@ header {
 }
 
 .menu-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding: 48px 40px;
   background-color: #ffffff;
   z-index: 999;
@@ -1344,6 +1337,13 @@ header {
   transition: -webkit-transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out;
   transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media screen and (max-width: 480px) {
   .menu-container {
@@ -1368,7 +1368,7 @@ header {
   padding: 0;
   margin: 0;
   list-style: none;
-  margin-bottom: 302px;
+  margin-bottom: auto;
 }
 
 .mobile-menu .link {
@@ -1411,10 +1411,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 357px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .messendger a {

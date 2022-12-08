@@ -50,5 +50,11 @@
     display: block;
     margin: auto;margin-bottom: 30px;
     max-width: 1199px;
-
+@media screen and (min-width:480px) {
+    width: 360px;
+}
+@media screen and (min-width:1200px) {
+    font-size: 44px;
+    width: 696px;
+}
 }

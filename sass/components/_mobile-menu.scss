@@ -76,6 +76,9 @@
   font-size: 34px;
   line-height: 1.17;
   margin-bottom: 32px;
+  @media screen and (max-width: 480px) {
+    font-size:22px ;
+  }
 }
 .mob__t a{
   color: #2196F3;
@@ -84,6 +87,10 @@
   font-size: 24px;
   line-height: 1.16;
   margin-bottom: 64px;
+  @media screen and (max-width: 480px) {
+  font-size:16px ;
+  }
+  
 }
 .mob__m a{
   color: #757575;

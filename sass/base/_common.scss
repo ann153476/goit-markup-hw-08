@@ -15,10 +15,11 @@
     }
 }
 .section{
-    padding: 94px 0;
-    @media screen and (min-width:767.5px) {
+    
+    @media screen and (max-width:1199.5px) {
     padding: 60px 0;
     }
+    padding: 94px 0;
 }
 .block--center{
     display: block;

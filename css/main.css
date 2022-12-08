@@ -90,7 +90,7 @@ p {
 .section {
   padding: 94px 0;
 }
-@media screen and (min-width: 767.5px) {
+@media screen and (max-width: 1199.5px) {
   .section {
     padding: 60px 0;
   }
@@ -400,6 +400,17 @@ header {
   margin-bottom: 30px;
   max-width: 1199px;
 }
+@media screen and (min-width: 480px) {
+  .big__text {
+    width: 360px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .big__text {
+    font-size: 44px;
+    width: 696px;
+  }
+}
 
 .backdrop {
   position: fixed;
@@ -687,11 +698,10 @@ header {
             align-items: center;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199.5px) {
   .benefits {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -15px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -705,6 +715,11 @@ header {
 @media screen and (max-width: 767.5px) {
   .benefits__card:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1199.5px) {
+  .benefits__card:not(:last-child) {
+    margin-right: 15px;
   }
 }
 
@@ -945,9 +960,6 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 @media screen and (max-width: 1199.5px) {
   .clients {
@@ -978,7 +990,16 @@ header {
   color: #2196F3;
   border: 1px solid #2196F3;
 }
-@media screen and (max-width: 767.5px) {
+@media screen and (max-width: 479.5px) {
+  .clients__link {
+    width: 140px;
+    height: 61px;
+    -ms-flex-preferred-size: calc(100% - 0px)/2;
+        flex-basis: calc(100% - 0px)/2;
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 479.5px) and (max-width: 767.5px) {
   .clients__link {
     width: 210px;
     -ms-flex-preferred-size: calc(100% - 0px)/2;
@@ -1047,7 +1068,6 @@ header {
   border-radius: 4px;
   background-color: transparent;
   outline: transparent;
-  margin-right: 12px;
   width: 100%;
 }
 .footer__mail input:hover, .footer__mail input:focus {
@@ -1062,6 +1082,7 @@ header {
 @media screen and (min-width: 1199.5px) {
   .footer__mail input {
     width: 358px;
+    margin-right: 12px;
     margin-bottom: 0;
   }
 }
@@ -1404,6 +1425,11 @@ header {
   line-height: 1.17;
   margin-bottom: 32px;
 }
+@media screen and (max-width: 480px) {
+  .mob__t {
+    font-size: 22px;
+  }
+}
 
 .mob__t a {
   color: #2196F3;
@@ -1413,6 +1439,11 @@ header {
   font-size: 24px;
   line-height: 1.16;
   margin-bottom: 64px;
+}
+@media screen and (max-width: 480px) {
+  .mob__m {
+    font-size: 16px;
+  }
 }
 
 .mob__m a {

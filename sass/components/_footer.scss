@@ -35,7 +35,7 @@
     border-radius: 4px;
     background-color: transparent;  
     outline: transparent;
-    margin-right: 12px;
+    
     width: 100%;
     &:hover,
     &:focus{
@@ -46,7 +46,7 @@
         margin-bottom: 20px;
     }
     @media screen and (min-width:1199.5px) {
-        width: 358px;
+        width: 358px;margin-right: 12px;
         margin-bottom: 0;
     }
 }
@@ -96,7 +96,9 @@
 }
 .footer__input{
     @media screen and (max-width:480px) {
-    margin-bottom: 15px; width: 100%;}
+    margin-bottom: 15px;
+     
+    width: 100%;}
     
 }
 

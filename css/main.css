@@ -1425,7 +1425,7 @@ header {
   line-height: 1.17;
   margin-bottom: 32px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .mob__t {
     font-size: 22px;
   }
@@ -1440,7 +1440,7 @@ header {
   line-height: 1.16;
   margin-bottom: 64px;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 479px) {
   .mob__m {
     font-size: 16px;
   }

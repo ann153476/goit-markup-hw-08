@@ -1,4 +1,7 @@
 .main__button{
+    @media screen and (max-width:479.5px) {
+      width: 150px;  height:38px;
+    font-size: 14px; }
     width: 200px;
     height: 50px;
     border: none;
